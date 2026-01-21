@@ -227,7 +227,7 @@ export default function Experience()
             position={desk.nodes.screen.position}
             rotation={desk.nodes.screen.rotation}
             scale={desk.nodes.screen.scale}
-            onClick={() => window.location.href =('https://ray-120.com/cv')}
+            onClick={() => window.top.location.href =('https://ray-120.com/cv')}
             onPointerOver={() => setHovered(true)}
             onPointerOut={() => setHovered(false)}
         />
