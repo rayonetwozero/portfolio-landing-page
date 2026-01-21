@@ -1,0 +1,137 @@
+html,
+body,
+#root
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: ivory;
+}
+
+.htmlScreen iframe
+{
+
+    width: 1024px;
+    height: 600px;
+    border: none;
+    border-radius: 10px;
+}
+
+.copyright {
+    position: fixed;
+    right: 16px;
+    bottom: 12px;
+    color: #C73E3A;
+    font-size: 1em;
+    z-index: 100;
+    
+    user-select: none;
+    font-family: monospace;
+;
+    
+    border-radius: 12px;          /* 圓角 */
+    padding: 6px 16px;            /* 內距讓外框不貼文字 */
+    
+}
+
+.typewriter-cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.start-btn {
+  font-size: 2em;
+  padding: 0.5em 2em;
+  border-radius: 8px;
+  border: 3px solid #ffffff;
+  background: #000000;
+  color: #ffffff;
+  font-family: monospace;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.start-btn:hover {
+  background: #C73E3A;
+  color: #fff;
+  border: 3px solid #C73E3A;
+}
+
+.music-switch-btn {
+  padding: 0.5em 1.2em;
+  border-radius: 8px;
+  border: 1.5px solid #fff;
+  background: #000;
+  color: #C73E3A;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.2em;
+  width: 40px;
+  height: 40px;
+  font-family: monospace;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.music-switch-btn.off {
+  background: #fff;
+  color: #222;
+  border: 1.5px solid #222;
+}
+
+.music-switch-btn:hover {
+  background: #C73E3A;
+  color: #fff;
+  border: 1.5px solid #fff;
+}
+
+.htmlScreen img {
+  transition: box-shadow 0.2s, border 0.2s;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.htmlScreen img:hover {
+  border: 80px solid #bd2a2a;
+  box-shadow: 0 0 12px #fff8, 0 0 0 4px #fff4;
+}
+
+.char {
+  position: absolute;
+  font-size: 14vw;
+  font-weight: 800;
+  padding: 0;
+  margin: 0;
+  line-height: 0.8em;
+}
+
+.chair-tooltip {
+  background: #fff;
+  color: #c00;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.5em;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  border: 0px solid #c00;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+}
+
+.lottie-loading-overlay {
+  position: fixed;
+  z-index: 10000;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
